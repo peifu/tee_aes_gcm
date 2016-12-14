@@ -1,0 +1,6 @@
+CFG_TEE_TA_LOG_LEVEL ?= 2
+CPPFLAGS += -DCFG_TEE_TA_LOG_LEVEL=$(CFG_TEE_TA_LOG_LEVEL)
+BINARY=7ededcfe-b6e6-11e6-9cb0d4ae52a7b3b3
+TA_DEV_KIT_DIR=$(TDK_DIR)/ta_export
+
+include $(TA_DEV_KIT_DIR)/mk/ta_dev_kit.mk
